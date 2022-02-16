@@ -1,0 +1,17 @@
+.product-details-container .img-thumbnail.active {
+  border: 1px solid grey;
+  padding: 2px;
+}
+
+.product-details-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+@media (min-width: 768px) {
+  .product-details-container {
+    display: flex;
+    flex-direction: row;
+  }
+}

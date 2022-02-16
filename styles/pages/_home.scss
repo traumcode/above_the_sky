@@ -1,0 +1,126 @@
+$profile-text-size: clamp(17px, 2vw, 25px);
+
+.home-container {
+  border: 1px solid rgba(70, 253, 210, 0.12);
+  position: relative;
+
+}
+
+.home-container .products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  -moz-box-pack: center;
+  justify-content: center;
+  margin: 20px 40px;
+  padding: 50px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  min-width: 300px;
+
+}
+
+.home-container .card {
+  margin: 10px auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.home-container .card-img-top {
+  height: 250px;
+  width: 100%;
+}
+
+.home-container .card-text {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.info-icon {
+  font-size: clamp(20px, 3vw, 35px);
+}
+
+.info-text {
+  font-size: clamp(13px, 1vw, 17px);
+}
+
+@media (max-width: 767px) {
+  .info-container {
+    margin: 50px;
+    width: 77vw;
+  }
+  .season-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.info-container {
+  color: #272727;
+}
+
+.info-box {
+  box-shadow: #000000 0 0 0 2px inset,
+  rgb(47, 47, 47) 10px -10px 0px -3px,
+  rgb(70, 253, 210) 10px -10px
+}
+
+.season-container {
+  height: 500px;
+  width: 85%;
+  margin: 100px;
+  position: relative;
+  display: -moz-box;
+  display: flex;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  flex-direction: row;
+  -moz-box-align: center;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+
+}
+
+@media (max-width: 767px) {
+  .season-container {
+    display: -moz-box;
+    display: flex;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column-reverse;
+    height: 110vh;
+    margin: 7%;
+    padding: 20px;
+    justify-content: space-evenly;
+  }
+}
+
+.season-text{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.season-picture-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.season-picture-container img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  box-shadow: #000000 0 0 0 2px inset, #2f2f2f 10px -10px 0px -3px, #46fdd2 10px -10px;
+}
+.new-arrivals-text {
+  text-align: center;
+}
