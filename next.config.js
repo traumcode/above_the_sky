@@ -6,9 +6,24 @@ const postcss = require('postcss')
 
 module.exports = {
 	module: {
-		rules: [{ test: /\.txt$/, use: 'raw-loader' }],
+		rules: [
+			{
+				test: /\.txt$/, use: 'raw-loader'
+			},
+			{
+				test: /\.css$/,
+				use: ['style-loader', 'postcss-loader'],
+			},
+			{
+				test: /\.jsx?$/,
+				use: ['babel-loader', 'astroturf/loader'],
+			}],
 	},
-	plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })],
+	plugins: [
+		new HtmlWebpackPlugin({ template: './src/index.html' }),
+		require('postcss-focus'),
+		require('autoprefixer')
+	],
 	env: {
 		"BASE_URL": "http://localhost:3000/",
 		"MONGO_URL": "mongodb+srv://dobresco:above42@ats0.lac1i.mongodb.net/abovethesky_database?retryWrites=true&w=majority",
