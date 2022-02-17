@@ -21,7 +21,6 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({ template: './src/index.html' }),
-		require('postcss-focus'),
 		require('autoprefixer')
 	],
 	env: {
