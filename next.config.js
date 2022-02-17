@@ -21,10 +21,11 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({ template: './src/index.html' }),
+		require('postcss-focus'),
 		require('autoprefixer')
 	],
 	env: {
-		"BASE_URL": "https://above-the-sky.herokuapp.com/",
+		"BASE_URL": "https://above-the-sky.vercel.app/",
 		"MONGO_URL": "mongodb+srv://dobresco:above42@ats0.lac1i.mongodb.net/abovethesky_database?retryWrites=true&w=majority",
 		"ACCESS_TOKEN_SECRET": "above12332377947551327083",
 		"REFRESH_TOKEN_SECRET": "above123secret66018398rere45292697",
