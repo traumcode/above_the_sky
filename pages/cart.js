@@ -67,7 +67,7 @@ const Cart = () => {
 		}
 		if(newCart.length < cart.length) {
 			setCallback(!callback)
-			return dispatch({ type: "NOTIFY", payload: { error: "The Product is out of stock or the quantity is insufficient" } })
+			return dispatch({ type: "NOTIFY", payload: { error: "The product is out of stock or the quantity is insufficient" } })
 		}
 		dispatch({ type: "NOTIFY", payload: { loading: true } })
 

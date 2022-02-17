@@ -9,11 +9,11 @@ const Toast = ({ message }) => {
 		case 'Please add all the fields!':
 			swaal(message.message = 'Please add all the fields!', 'warning')
 			break;
-		case 'Success! Updated a Product':
-			swaal(message.message = 'Successfully updated the Product!', 'success')
+		case 'Success! Updated a product':
+			swaal(message.message = 'Successfully updated the product!', 'success')
 			router.reload()
 			break;
-		case "Success! Created a new Product":
+		case "Success! Created a new product":
 			swaal(message.message, 'success')
 			router.reload()
 			break;

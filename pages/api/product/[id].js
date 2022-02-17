@@ -24,7 +24,7 @@ const getProduct = async (req, res) => {
 		const { id } = req.query;
 		const product = await Products.findById(id);
 
-		if(!product) return res.status(400).json({error: 'This Product does not exists.'})
+		if(!product) return res.status(400).json({error: 'This product does not exists.'})
 
 		res.json({ product })
 
@@ -49,7 +49,7 @@ const updateProduct = async (req, res) => {
 			title: title.toLowerCase(), price, inStock, description, content, category, images
 		})
 
-		res.json({message: 'Success! Updated a Product'})
+		res.json({message: 'Success! Updated a product'})
 	} catch (error) {
 		return res.status(500).json({error: error.message})
 	}
@@ -65,7 +65,7 @@ const deleteProduct = async(req, res) => {
 		const {id} = req.query
 
 		await Products.findByIdAndDelete(id)
-		res.json({message: 'Deleted a Product.'})
+		res.json({message: 'Deleted a product.'})
 
 	} catch (error) {
 		return res.status(500).json({error: error.message})
