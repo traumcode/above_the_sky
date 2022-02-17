@@ -1,4 +1,4 @@
-import '../node_modules/react-loader-spinner/dist/loader/css/Triangle.css'
+import '../node_modules/react-loader-spinner/dist/loader/css/triangle.css'
 import { Triangle } from "react-loader-spinner";
 
 
