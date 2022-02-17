@@ -25,7 +25,7 @@ module.exports = {
 		require('autoprefixer')
 	],
 	env: {
-		"BASE_URL": "https://atsats.netlify.app/",
+		"BASE_URL": "https://above-the-sky.vercel.app/",
 		"MONGO_URL": "mongodb+srv://dobresco:above42@ats0.lac1i.mongodb.net/abovethesky_database?retryWrites=true&w=majority",
 		"ACCESS_TOKEN_SECRET": "above12332377947551327083",
 		"REFRESH_TOKEN_SECRET": "above123secret66018398rere45292697",
