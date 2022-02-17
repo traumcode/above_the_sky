@@ -5,7 +5,9 @@ export const getData = async (url, token) => {
 		method: 'GET',
 		headers: {
 			'Authorization': token
-		}
+		},
+		credentials: 'same-origin',
+		cache: 'no-store'
 	})
 
 	return await res.json()
@@ -18,6 +20,8 @@ export const postData = async (url, post, token) => {
 			'Content-Type': 'application/json',
 			'Authorization': token
 		},
+		credentials: 'same-origin',
+		cache: 'no-store',
 		body: JSON.stringify(post)
 	})
 
