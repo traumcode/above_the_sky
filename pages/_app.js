@@ -31,7 +31,7 @@ function MyApp ({
 	return (
 		<DataProvider>
 			<Head>
-				<title>Above the Sky</title>
+				<title>CAFFEINE LAB</title>
 			</Head>
 			<Layout>
 				<Component {...pageProps} />

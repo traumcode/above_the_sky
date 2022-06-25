@@ -6,7 +6,7 @@ class MyDocument extends Document {
 		return (
 			<Html lang='en'>
 				<Head>
-					<meta name="description" content="Above The Sky unlimited"/>
+					<meta name="description" content="CAFFEINE LAB"/>
 					<meta name="apple-mobile-app-capable" content="yes"/>
 					<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
 					<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
