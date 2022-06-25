@@ -7,12 +7,10 @@ import ProductItem from "../components/product/ProductItem"
 import { useRouter } from "next/router"
 
 import filterSearch from '../utils/filterSearch'
-import Filter from '../components/Filter'
 
 
 const Home = (props) => {
 	const [ products, setProducts ] = useState(props.products)
-
 	const [ page, setPage ] = useState(1)
 	const router = useRouter()
 
@@ -27,17 +25,11 @@ const Home = (props) => {
 		if(Object.keys(router.query).length === 0) setPage(1)
 	},[router.query])
 
-	const handleLoadmore = () => {
-		setPage(page + 1)
-		filterSearch({router, page: page + 1})
-	}
-
 	return (
 		<div className="home-container">
 			<Head>
 				<title>Home Page</title>
 			</Head>
-			<Filter state={state} />
 
 			<div className="container-fluid mt-5 info-container">
 				<div className="row justify-content-evenly">
@@ -85,12 +77,6 @@ const Home = (props) => {
 						})
 				}
 			</div>
-			{
-				props.result < page * 6 ? ""
-					: <button className="btn btn-dark d-block mx-auto mb-4" onClick={handleLoadmore}>
-					Load more
-					</button>
-			}
 		</div>
 	)
 }

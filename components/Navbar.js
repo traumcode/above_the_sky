@@ -3,6 +3,7 @@ import Link from "next/link"
 import { useRouter } from "next/router";
 import { DataContext } from "../store/GlobalState"
 import Cookie from "js-cookie";
+import LogoC from "../resources/caffeine lab..png"
 
 
 function Navbar () {
@@ -102,9 +103,11 @@ function Navbar () {
 				</div>
 				<Link href="/">
 					<button className="title-above">
-						△bove the sky
+						CAFFEINE LAB
 					</button>
 				</Link>
+				<img src={LogoC} alt="logo"/>
+				
 				<p className="newest-products">view newest products</p>
 				<div className="indicator">
 					<span/>
