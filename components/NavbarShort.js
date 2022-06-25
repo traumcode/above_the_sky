@@ -3,6 +3,7 @@ import Link from "next/link"
 import { useRouter } from "next/router";
 import { DataContext } from "../store/GlobalState"
 import Cookie from "js-cookie";
+import { FaUserCircle } from "react-icons/fa";
 
 
 function NavbarShort () {
@@ -84,7 +85,7 @@ function NavbarShort () {
 										<li className="nav-item">
 											<Link href="/signin">
 												<a className={"nav-link" + isActive("/signin")}>
-													<i aria-hidden className="fas fa-solid fa-user-astronaut sign-in-link"/>
+													<FaUserCircle className="sign-in-link"/>
 												</a>
 											</Link>
 										</li>
