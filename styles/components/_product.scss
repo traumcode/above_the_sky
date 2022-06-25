@@ -3,7 +3,7 @@
 }
 
 .product-explore:hover {
-  color:grey;
+  color: grey;
 }
 
 .button-49,
@@ -25,91 +25,91 @@
   touch-action: manipulation;
 }
 
-  .button-49:after {
-    --slice-0: inset(50% 50% 50% 50%);
-    --slice-1: inset(80% -6px 0 0);
-    --slice-2: inset(50% -6px 30% 0);
-    --slice-3: inset(10% -6px 85% 0);
-    --slice-4: inset(40% -6px 43% 0);
-    --slice-5: inset(80% -6px 5% 0);
+.button-49:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
 
-    content: 'ALTERNATE TEXT';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(45deg, transparent 3%, #4cff41 3%, #00E6F6 5%, #151717 5%);
-    text-shadow: -3px -3px 0px #ff1f63, 3px 3px 0px #00E6F6;
-    clip-path: var(--slice-0);
-  }
+  content: 'ALTERNATE TEXT';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #4cff41 3%, #00E6F6 5%, #151717 5%);
+  text-shadow: -3px -3px 0px #ff1f63, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
 
-  .button-49:hover:after {
-    animation: 1s glitch;
-    animation-timing-function: steps(2, end);
-  }
+.button-49:hover:after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
 
 .button-49:hover:active {
   background: #282828;
 }
 
-  @keyframes glitch {
-    0% {
-      clip-path: var(--slice-1);
-      transform: translate(-20px, -10px);
-    }
-    10% {
-      clip-path: var(--slice-3);
-      transform: translate(10px, 10px);
-    }
-    20% {
-      clip-path: var(--slice-1);
-      transform: translate(-10px, 10px);
-    }
-    30% {
-      clip-path: var(--slice-3);
-      transform: translate(0px, 5px);
-    }
-    40% {
-      clip-path: var(--slice-2);
-      transform: translate(-5px, 0px);
-    }
-    50% {
-      clip-path: var(--slice-3);
-      transform: translate(5px, 0px);
-    }
-    60% {
-      clip-path: var(--slice-4);
-      transform: translate(5px, 10px);
-    }
-    70% {
-      clip-path: var(--slice-2);
-      transform: translate(-10px, 10px);
-    }
-    80% {
-      clip-path: var(--slice-5);
-      transform: translate(20px, -10px);
-    }
-    90% {
-      clip-path: var(--slice-1);
-      transform: translate(-10px, 0px);
-    }
-    100% {
-      clip-path: var(--slice-1);
-      transform: translate(0);
-    }
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
   }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
 
-  @media (min-width: 768px) {
-    .button-49,
-    .button-49:after {
-      width: 225px;
-      height: 28px;
-      line-height: 22px;
-      font-size: 15px;
-    }
+@media (min-width: 768px) {
+  .button-49,
+  .button-49:after {
+    width: 225px;
+    height: 28px;
+    line-height: 22px;
+    font-size: 15px;
   }
+}
 
 .button-49-disabled {
   background: grey;
@@ -127,7 +127,6 @@
   position: relative;
   user-select: none;
   -webkit-user-select: none;
-  touch-action: manipulation;
 }
 
 .figure {
@@ -147,4 +146,66 @@
 
 .figure:hover img.product-image-hover {
   opacity: 1;
+}
+
+.button-53 {
+
+    background-color: #FF914FF7;
+    border: 0 solid #E5E7EB;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #000000;
+    display: -moz-box;
+    display: flex;
+    font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 700;
+    -moz-box-pack: center;
+    justify-content: center;
+    line-height: 1.75rem;
+    padding: 0.75rem 1.65rem;
+    position: relative;
+    text-align: center;
+    -webkit-text-decoration: none #000000 solid;
+    -moz-text-decoration: none #000000 solid;
+    text-decoration: none #000000 solid;
+    text-decoration-thickness: auto;
+    /* width: 100%; */
+    max-width: 345px;
+    position: relative;
+    cursor: pointer;
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+}
+
+.button-53:focus {
+  outline: 0;
+}
+
+.button-53:after {
+  content: '';
+  position: absolute;
+  border: 1px solid #000000;
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.button-53:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-53 {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
 }

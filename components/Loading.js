@@ -1,11 +1,11 @@
 import '../node_modules/react-loader-spinner/dist/loader/css/triangle.css'
-import { Triangle } from "react-loader-spinner";
+import { Circles } from "react-loader-spinner";
 
 
 const Loading = () => {
 	return (
 		<div className="loading-background">
-			<Triangle ariaLabel="loading-indicator" color="white" wrapperStyle={{
+			<Circles ariaLabel="loading-indicator" color="white" wrapperStyle={{
 				position: "absolute",
 				top: '50%',
 				left: '50%',

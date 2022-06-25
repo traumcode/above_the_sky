@@ -50,6 +50,7 @@ $profile-text-size: clamp(17px, 2vw, 25px);
     margin: 50px;
     width: 77vw;
   }
+
   .season-container {
     display: flex;
     flex-direction: column;
@@ -60,12 +61,59 @@ $profile-text-size: clamp(17px, 2vw, 25px);
   color: #272727;
 }
 
-.info-box {
-  box-shadow: #000000 0 0 0 2px inset,
-  rgb(47, 47, 47) 10px -10px 0px -3px,
-  rgb(70, 253, 210) 10px -10px
+.Why-choose-us-section {
+  position: relative;
+  text-align: center;
+  background-color: white;
+  height: 18em;
+
+  .Aroma-span {
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    margin-top: 6rem;
+    z-index: 0;
+
+    span {
+      font-family: "Montserrat", sans-serif;
+      color: #ECECEC;
+      font-size: 180px;
+      font-weight: 100;
+      margin-right: 3rem;
+      margin-left: 3rem;
+    }
+  }
+
+  .Why-choose-us-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 900;
+    color: #333333;
+    position: relative;
+
+  }
+
+  h5 {
+    font-size: 15px;
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+  }
 }
 
+.info-box {
+  box-shadow: #000 0 0 0 1px inset, #2f2f2f4f 12px 5px 12px 0px, #fda446 0px 0;
+}
+
+@media (min-width: 768px) {
+  .col-md-2 {
+    flex: 0 0 auto;
+    width: 27.7%;
+  }
+}
 .season-container {
   height: 500px;
   width: 85%;
@@ -97,7 +145,7 @@ $profile-text-size: clamp(17px, 2vw, 25px);
   }
 }
 
-.season-text{
+.season-text {
   display: flex;
   flex-direction: column;
   height: 300px;
@@ -116,11 +164,11 @@ $profile-text-size: clamp(17px, 2vw, 25px);
 }
 
 .season-picture-container img {
-  flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
   box-shadow: #000000 0 0 0 2px inset, #2f2f2f 10px -10px 0px -3px, #46fdd2 10px -10px;
 }
+
 .new-arrivals-text {
   text-align: center;
 }

@@ -7,11 +7,11 @@ $profile-text-size-astronaut: clamp(17px, 2vw, 30px);
 }
 
 .nav-link:hover {
-  color: #47ffd4 !important;
+  color: #ffb054 !important;
 }
 
 .nav-link:active {
-  color: #18d0a4 !important;
+  color: #d07a18 !important;
 }
 
 .navbarMain {
@@ -23,8 +23,19 @@ $profile-text-size-astronaut: clamp(17px, 2vw, 30px);
   background: url(https://i.ibb.co/zZBF8Q7/pexels1.jpg) black center no-repeat;
   background-size: cover;
   padding: 10px;
-  border-bottom: 5px solid #47ffd4;
-  border-left: 40px solid transparent;
+  border-bottom: 5px solid #da892a;
+}
+
+.photo-above {
+
+  position: absolute;
+  top: 392px;
+  width: 177px;
+
+}
+
+.navbar-collapse {
+  flex-grow: 0!important;
 }
 
 .navbar-toggler {
@@ -113,10 +124,11 @@ $profile-text-size-astronaut: clamp(17px, 2vw, 30px);
 
 .title-above,
 .title-above:after {
-  background: black;
+  background: #090400cc;
   position: absolute;
   top: 145px;
-  height: 125px;
+  height: 4em!important;
+  width: 64vw!important;
   line-height: 44px;
   font-size: clamp(50px, 2vw, 80px);;
   font-family: 'Montserrat', sans-serif;
@@ -150,11 +162,7 @@ $profile-text-size-astronaut: clamp(17px, 2vw, 30px);
   clip-path: var(--slice-0);
 }
 
-.title-above:after {
-  animation: 1s glitch;
-  animation-timing-function: steps(2, end);
-  animation-direction: alternate;
-}
+
 
 .title-above:hover:active {
   background: #282828;
@@ -196,7 +204,6 @@ $profile-text-size-astronaut: clamp(17px, 2vw, 30px);
     border: none;
     border-bottom: 3px solid #fff;
     border-right: 3px solid #fff;
-    animation: animate 1s linear infinite;
 
     &:nth-child(1) {
       top: -30px;
@@ -230,19 +237,6 @@ $profile-text-size-astronaut: clamp(17px, 2vw, 30px);
   }
 }
 
-@keyframes animate {
-  0% {
-    border-color: #fff;
-    transform: translate(0, 0);
-  }
-  20% {
-    border-color: #fff;
-    transform: translate(15px, 15px);
-  }
-  20.1%, 100% {
-    border-color: #47ffd4;
-  }
-}
 
 .cart-icon-span {
   position: absolute;
@@ -254,6 +248,17 @@ $profile-text-size-astronaut: clamp(17px, 2vw, 30px);
   color: white;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
+}
+
+.title-below {
+  position: absolute;
+  top: 150px;
+  color: white;
+  right: 0;
+  left: 9px;
+  font-size: 72px;
+  padding: 2px;
+  font-weight: 100;
 }
 
 .profile-icon-container-short {
