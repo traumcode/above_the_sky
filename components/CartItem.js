@@ -20,7 +20,7 @@ const CartItem = ({item, dispatch, cart}) => {
                         <a>{item.title}</a>
                     </Link>
                 </h5>
-                <h6 className='text-danger'>${item.quantity * item.price}</h6>
+                <h6 className='text-danger'>{item.quantity * item.price} lei</h6>
                 {
                     item.inStock > 0
                         ? <p className="mb-1 text-danger">In Stock: {item.inStock}</p>

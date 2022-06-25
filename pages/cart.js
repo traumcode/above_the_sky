@@ -123,7 +123,7 @@ const Cart = () => {
 					<label htmlFor="mobile">Mobile</label>
 					<input type="text" name="mobile" id="mobile" className="form-control mb-2" value={mobile} onChange={e => setMobile(e.target.value)}/>
 				</form>
-				<h3>Total: <span className="text-info">${total}</span></h3>
+				<h3>Total: <span className="text-info">{total} lei</span></h3>
 				<Link href={auth.user ? "#!" : "/signin"}>
 					<a className="btn btn-dark my-2" onClick={handlePayment}>Proceed to payment <i className="fas fa-solid fa-credit-card"/></a>
 				</Link>

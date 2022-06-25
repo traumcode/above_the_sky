@@ -57,7 +57,7 @@ const ProductItem = ({ product }) => {
 					{product.title}
 				</h5>
 				<div className="row justify-content-between mx-0" style={{ flexWrap: "nowrap" }}>
-					<h6 className="text-danger" style={{ width: "50%" }}>${product.price}</h6>
+					<h6 className="text-danger" style={{ width: "50%" }}>{product.price} lei</h6>
 					{
 						product.inStock > 0
 							? <h6 className="text-danger" style={{ width: "50%" }}>In Stock: {product.inStock}</h6>

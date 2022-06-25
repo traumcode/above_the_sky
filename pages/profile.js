@@ -147,7 +147,7 @@ const Profile = () => {
 											</Link>
 										</td>
 										<td className="p-2">{new Date(order.createdAt).toLocaleTimeString()}</td>
-										<td className="p-2">${order.total}</td>
+										<td className="p-2">{order.total} lei</td>
 										<td className="p-2">{
 											order.delivered
 												? <i className="fas fa-check text-success"/>

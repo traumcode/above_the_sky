@@ -46,7 +46,7 @@ const ProductDetails = (props) => {
 
 			<div className="col-md-6 m-3">
 				<h2 className="text-uppercase">{product.title}</h2>
-				<h5 className="text-danger">${product.price}</h5>
+				<h5 className="text-danger">{product.price} lei</h5>
 
 				<div className="row mx-0 d-flex justify-content-between">
 					{
