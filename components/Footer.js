@@ -7,14 +7,14 @@ function Footer () {
 		<div>
 			<div className='footer-container'>
 				<div className='footer-title'>
-					<h1 className='above-title'>△bovethesky.com</h1>
+					<h1 className='above-title'>caffeinelab.</h1>
 				</div>
 				<div className='footer-buttons'>
 					<Link href='/'>
 						Home
 					</Link>
 					<Link href='/manifest'>
-						Manifest
+						Despre noi
 					</Link>
 					<Link href='/contact'>
 						Contact
@@ -31,7 +31,7 @@ function Footer () {
 
 				</div>
 				<div className='footer-social'>
-					Find us on:
+					Ne gasesti si pe:
 					<i className="fa fa-brands fa-instagram footer-icon" aria-hidden/>
 					<i className="fa fa-brands fa-facebook-square footer-icon" aria-hidden/>
 				</div>

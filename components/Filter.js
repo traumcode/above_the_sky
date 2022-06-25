@@ -28,8 +28,9 @@ const Filter = ({state}) => {
 	},[search])
 
 	return (
-		<div className="input-group">
-			<div className="input-group-prepend col-md-2 px-0 mt-2">
+		
+		<div className="input-group" style={{flexWrap: 'nowrap',justifyContent: 'center'}}>
+			<div className="input-group-prepend px-0 mt-2">
 				<select className="custom-select text-capitalize"
 				        value={category} onChange={handleCategory}>
 
@@ -48,7 +49,7 @@ const Filter = ({state}) => {
 				       value={search.toLowerCase()} onChange={e => setSearch(e.target.value)} />
 			</form>
 
-			<div className="input-group-prepend col-md-2 px-0 mt-2">
+			<div className="input-group-prepend px-0 mt-2">
 				<select className="custom-select text-capitalize"
 				        value={sort} onChange={handleSort}>
 

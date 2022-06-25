@@ -49,7 +49,7 @@ function NavbarShort () {
 				</div>
 				<div className="container-fluid" style={{alignItems: 'stretch'}}>
 					<Link href="/">
-						<a className="navbar-brand">ATS</a>
+						<a className="navbar-brand">CAFFEINE LAB</a>
 					</Link>
 					<button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
 					        aria-label="Toggle navigation">
@@ -114,7 +114,6 @@ function NavbarShort () {
 													auth.user.role === 'ADMIN' && adminRouter()
 												}
 												<div className="dropdown-divider"/>
-												<a className="dropdown-item" href="#">settings</a>
 												<button className="dropdown-item" onClick={handleLogout}>log out</button>
 											</div>
 										</li>

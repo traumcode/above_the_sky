@@ -6,13 +6,13 @@ import { getData } from "../utils/fetchData"
 import ProductItem from "../components/product/ProductItem"
 import { useRouter } from "next/router"
 
+import {GiCoffeeBeans} from 'react-icons/gi'
+import {GoGift} from 'react-icons/go'
+import {TbTruckDelivery} from 'react-icons/tb'
 import filterSearch from '../utils/filterSearch'
-import Filter from '../components/Filter'
-
 
 const Home = (props) => {
 	const [ products, setProducts ] = useState(props.products)
-
 	const [ page, setPage ] = useState(1)
 	const router = useRouter()
 
@@ -27,49 +27,57 @@ const Home = (props) => {
 		if(Object.keys(router.query).length === 0) setPage(1)
 	},[router.query])
 
-	const handleLoadmore = () => {
-		setPage(page + 1)
-		filterSearch({router, page: page + 1})
-	}
-
 	return (
 		<div className="home-container">
 			<Head>
 				<title>Home Page</title>
 			</Head>
-			<Filter state={state} />
 
 			<div className="container-fluid mt-5 info-container">
+				<section className="Why-choose-us-section">
+					<div>
+						<h1 className="Why-choose-us-title">De ce sa ne alegi pe noi ?</h1>
+					</div>
+					<div style={ { zIndex: "2", position: "relative" } }>
+						<h5>ATENTIA NOASTRA SE CONCENTREAZA PE UN SINGUR LUCRU, PARCUSUL CAFELEI:</h5>
+						<h5>DE LA FERMA, LA PRAJITORIE, IAR APOI IN CEASCA TA</h5>
+					</div>
+				</section>
 				<div className="row justify-content-evenly">
 					<div className="col-md-2 p-3 info-box">
-						<i className="info-icon fas fa-solid fa-truck" aria-hidden/>
-						<h5>FAST SHIPPING</h5>
-						<p className="info-text">Depends on the availability of the product we ship the next day</p>
+						<GiCoffeeBeans className="info-icon"/>
+						<h5>CAFEA</h5>
+						<p className="info-text">Pentru noi este foarte important sa alegem si sa-ti oferim cafeaua de cea mai buna calitate.
+							Selectam intotdeauna cu atentie loturile care confirma standardele cafelei de specialitate, ceea ce inseamna ca numai ciresele mature sunt culese manual si ca loturile pot
+							fi usor de urmarit de la origine pana la tine in ceasca.</p>
 					</div>
 					<div className="col-md-2 p-3 info-box">
-						<i className="info-icon fas fa-solid fa-rotate-left" aria-hidden/>
-						<h5>FREE 5 DAY RETURNS</h5>
-						<p className="info-text">If you return the product in 5 days, we will pay for the costs</p>
+						<GoGift className="info-icon"/>
+						<h5>BENEFICII</h5>
+						<p className="info-text">Oferte speciale pentru ocazii speciale. Vrem ca fiecare comanda sa o facem speciala si unica asa ca am adaugat bonusuri in forma de ciocolata de fiecare data cand
+							impachetam o comanda.
+							Credem ca micile detalii conteaza foarte mult si adauga un detaliu simplu dar de neuitat.</p>
 					</div>
 					<div className="col-md-2 p-3 info-box">
-						<i className="info-icon fas fa-solid fa-user-lock" aria-hidden/>
-						<h5>SECURE CHECKOUT</h5>
-						<p className="info-text">We have a very secure backend for your payments</p>
+						<TbTruckDelivery className="info-icon"/>
+						<h5>LIVRARE</h5>
+						<p className="info-text">Acoperim noi toate costurile de transport iar livrarea este foarte rapida. Livram in maxim 3 zile din ziua plasarii comenzii, daca aceasta este facuta intr-o zi lucratoare
+							inainte de 12:00PM</p>
 					</div>
 				</div>
 			</div>
 			<div className="season-container">
 				<div className="season-text">
-					<h1>This season</h1>
-					<p>be ready to change</p>
-					<button className="button-49" style={{ height: "100px" }} onClick={() => router.push("/discover")}>SHOP</button>
+					<h1 style={{ textAlign: 'center'}}>Aroma cafelei din Guatemala</h1>
+					<p>acest sezon importam cafea atent culesa din Guatemala</p>
+					<button className="button-53" style={{ height: "100px" }} onClick={() => router.push("/discover")}>Cumpara</button>
 				</div>
 				<div className="season-picture-container">
-					<img className="season-picture" src="https://i.ibb.co/8Y5jKMD/Whats-App-Image-2022-02-07-at-11-59-57.jpg" alt="poza"/>
+					<img className="season-picture" src="https://images.pexels.com/photos/1187761/pexels-photo-1187761.jpeg" alt="poza"/>
 				</div>
 			</div>
 			<div className="new-arrivals-text">
-				<h3>NEW ARRIVALS</h3>
+				<h3>CATEVA DINTRE PRODUSELE NOASTRE</h3>
 			</div>
 			<div className="products-grid">
 				{
@@ -85,12 +93,6 @@ const Home = (props) => {
 						})
 				}
 			</div>
-			{
-				props.result < page * 6 ? ""
-					: <button className="btn btn-dark d-block mx-auto mb-4" onClick={handleLoadmore}>
-					Load more
-					</button>
-			}
 		</div>
 	)
 }

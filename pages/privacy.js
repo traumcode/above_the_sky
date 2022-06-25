@@ -2,7 +2,7 @@ const Privacy = () => {
 	return (
 		<div className="container" >
 			<h1>Privacy Policy</h1>
-			<p>This Privacy Policy describes how flammaa.myshopify.com (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.</p>
+			<p>This Privacy Policy describes how  (the “Site” or “we”) collects, uses, and discloses your Personal Information when you visit or make a purchase from the Site.</p>
 
 			<h1>Collecting Personal Information</h1>
 			<p>When you visit the Site, we collect certain information about your device, your interaction with the Site, and information necessary to process your purchases. We may also collect additional information if you contact us for customer support. In this Privacy Policy, we refer to any information that can uniquely identify an individual (including the information below) as “Personal Information”. See the list below for more information about what Personal Information we collect and why.</p>
