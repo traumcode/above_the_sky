@@ -18,7 +18,7 @@ const Manifest = () => {
 					<br></br>
 					<br></br>
 					
-					Scopul nostru este de fi o sursa  de cafea proaspat prajita, superioara, acompaniata de inovatie, experienta si educatie.</p>
+					Scopul  nostru este de fi o sursa  de cafea proaspat prajita, superioara, acompaniata de inovatie, experienta si educatie.</p>
 			</div>
 			<div className="dobrescu-container">
 				<img src='https://images.pexels.com/photos/867466/pexels-photo-867466.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1' alt='picture with me' className='about-photo'/>
